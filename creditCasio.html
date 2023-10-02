@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./creditCasio.css">
+</head>
+<body>
+    <h1>CGPA Calculator</h1>
+    <table border="2" align="center">
+        <tr>
+            <th>Subject</th>
+            <th>Credits</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Maths</td>
+            <td id="mathsCredit">4</td>
+            <td>
+                <select id="mathsObtained">
+                <option value="">Select</option>
+                <option value="Ex">Ex</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>DBMS</td>
+            <td id="dbmsCredit">3</td>
+            <td>
+                <select id="dbmsObtained">
+                <option value="">Select</option>
+                <option value="Ex">Ex</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>FLAT</td>
+            <td id="flatCredit">3</td>
+            <td>
+                <select id="flatObtained">
+                <option value="">Select</option>
+                <option value="Ex">Ex</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>DLD</td>
+            <td id="dldCredit">3</td>
+            <td>
+                <select id="dldObtained">
+                <option value="">Select</option>
+                <option value="Ex">Ex</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>DAA</td>
+            <td id="daaCredit">4</td>
+            <td>
+                <select id="daaObtained">
+                <option value="">Select</option>
+                <option value="Ex">Ex</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+            </td>
+        </tr>
+
+    </table>
+    <br>
+        <center><button  id ="btn1" onclick="getResult()">Get Data</button></center>
+        <h2 id="result"></h1>
+   
+</body>
+<script src="./CreditCalc.js"></script>
+</html>
