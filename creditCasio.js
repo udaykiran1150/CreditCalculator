@@ -3,6 +3,7 @@ let selectedDbmsGrade = document.querySelector("#dbmsObtained");
 let selectedDaaGrade = document.querySelector("#daaObtained");
 let selectedFlatGrade = document.querySelector("#flatObtained");
 let selectedDldGrade = document.querySelector("#dldObtained");
+let button=document.querySelector('#btn1')
 
 function valueGetter(item) {
     let data;
@@ -64,7 +65,12 @@ let overall = parseFloat(mathsGrade) + parseFloat(dbmsGrade) + parseFloat(daaGra
 function getResult() {
     let productOverall = parseFloat(mathsGrade) * maths + parseFloat(dbmsGrade) * dbms + parseFloat(daaGrade) * daa + parseFloat(flatGrade) * flat + parseFloat(dldGrade) * dld;
     document.querySelector("#result").innerHTML=productOverall/overall;
+    console.log(productOverall)
     return productOverall;
 }
 
-//console.log(document.querySelector("#result").innerHTML);
+button.addEventListener('click',()=>
+{
+    getResult()
+})
+// console.log(document.querySelector("#result").innerHTML);
